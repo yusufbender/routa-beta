@@ -3,52 +3,70 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="theme-color" content="#f5f5ef">
+<meta name="theme-color" content="#075bd8">
 <meta name="description" content="Routa Android kapalı beta testine katıl.">
-<title>Routa — Beta Katılımı</title>
+<title>ROUTA — Beta Katılımı</title>
 <style>
 *{box-sizing:border-box}
-body{margin:0;background:#f5f5ef;color:#202820;font:16px/1.6 system-ui,-apple-system,Arial,sans-serif}
-main{width:min(100% - 40px,680px);margin:0 auto;padding:64px 0 48px}
-header{margin-bottom:76px}
-.logo{font-size:25px;font-weight:850;letter-spacing:3px}
-.label{margin-top:8px;color:#657064;font-size:13px}
-h1{font-size:clamp(38px,8vw,58px);line-height:1.08;letter-spacing:-2px;margin:0 0 18px}
-.intro{max-width:540px;color:#596258;font-size:17px;margin:0 0 30px}
-.button{display:inline-block;background:#426b42;color:white;text-decoration:none;padding:13px 20px;border-radius:6px;font-weight:650}
-h2{font-size:23px;margin:62px 0 22px}
-.steps{border-top:1px solid #d9ddd4}
-.step{display:grid;grid-template-columns:42px 1fr;gap:12px;padding:20px 0;border-bottom:1px solid #d9ddd4}
-.number{color:#66805e;font-weight:750}
-.step h3{font-size:17px;margin:0 0 4px}
-.step p{color:#657064;margin:0 0 8px;font-size:14px}
-.step a,.mail{color:#426b42;font-weight:650;text-decoration:none}
-.note{margin-top:20px;color:#657064;font-size:13px}
-footer{margin-top:70px;padding-top:18px;border-top:1px solid #d9ddd4;color:#788075;font-size:13px}
-@media(max-width:520px){main{padding-top:36px}header{margin-bottom:58px}}
+:root{--blue:#075bd8;--ink:#17202b;--muted:#657181;--green:#397b43}
+body{margin:0;background:#f6f7f4;color:var(--ink);font:16px/1.6 system-ui,-apple-system,Arial,sans-serif}
+main{width:min(100% - 36px,920px);margin:0 auto;padding:28px 0 54px}
+header{display:flex;align-items:center;justify-content:space-between;margin-bottom:26px}
+.brand{font-size:27px;font-weight:950;letter-spacing:2px;color:#124c9b;text-shadow:0 2px #fff}
+.tag{font-size:12px;color:#586575;border:1px solid #dce2e8;border-radius:30px;padding:6px 11px;background:#fff}
+.hero{overflow:hidden;border-radius:18px;background:linear-gradient(135deg,#0879ed,#063eaa);color:#fff;box-shadow:0 12px 32px #0c4d9d24}
+.logo-art{display:block;width:100%;height:auto;max-height:300px;object-fit:cover}
+.hero-copy{padding:0 34px 34px}
+h1{font-size:clamp(34px,6vw,54px);line-height:1.05;letter-spacing:-1.8px;margin:0 0 14px}
+.intro{max-width:620px;color:#e5efff;font-size:17px;margin:0 0 24px}
+.button{display:inline-block;background:#fff;color:#174c9a;text-decoration:none;padding:13px 20px;border-radius:8px;font-weight:750}
+section{margin-top:48px}
+h2{font-size:25px;letter-spacing:-.5px;margin:0 0 18px}
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.step{background:#fff;border:1px solid #e3e7e1;border-radius:12px;padding:20px;min-height:190px}
+.number{font-size:13px;color:var(--green);font-weight:850;letter-spacing:1px}
+.step h3{font-size:17px;margin:9px 0 6px}
+.step p{color:var(--muted);margin:0 0 14px;font-size:14px}
+.step a,.mail{color:var(--green);font-weight:700;text-decoration:none}
+.note{margin-top:14px;color:var(--muted);font-size:13px}
+footer{margin-top:54px;padding-top:18px;border-top:1px solid #dfe4dc;color:#788075;font-size:13px}
+@media(max-width:650px){main{padding-top:18px}.hero-copy{padding:0 22px 25px}.steps{grid-template-columns:1fr}.step{min-height:0}header{margin-bottom:18px}}
 </style>
 </head>
 <body>
 <main>
-<header><div class="logo">ROUTA</div><div class="label">Ada lojistik oyunu · Android kapalı beta</div></header>
-<section>
+<header><div class="brand">ROUTA</div><div class="tag">ANDROID · KAPALI BETA</div></header>
+<section class="hero" style="margin-top:0">
+<svg class="logo-art" viewBox="0 0 1200 360" role="img" aria-label="Routa ada lojistik oyunu logosu">
+<defs><linearGradient id="sky" x2="0" y2="1"><stop stop-color="#168bff"/><stop offset="1" stop-color="#0645b7"/></linearGradient><linearGradient id="land" x2="0" y2="1"><stop stop-color="#a5ee43"/><stop offset="1" stop-color="#36a52d"/></linearGradient></defs>
+<rect width="1200" height="360" fill="url(#sky)"/>
+<ellipse cx="600" cy="283" rx="420" ry="43" fill="#063a9a" opacity=".35"/>
+<path d="M175 230 Q230 145 350 166 Q430 95 540 143 Q675 80 780 146 Q930 110 1025 218 Q1000 300 850 306 L310 306 Q180 292 175 230Z" fill="#f7fbff" opacity=".95"/>
+<path d="M190 222 Q245 151 355 179 Q435 111 540 156 Q672 98 775 160 Q920 130 1008 221 Q978 285 845 290 L320 290 Q208 280 190 222Z" fill="url(#land)" stroke="#e3a34c" stroke-width="10"/>
+<g fill="#fff" stroke="#d7e7ff" stroke-width="5"><path d="M365 140v-52l43-26 44 26v52Z"/><path d="M735 142v-60l51-27 50 27v60Z"/><path d="M520 130v-42l32-19 32 19v42Z"/></g>
+<g fill="#ff8c35"><path d="M356 90l52-34 53 34v11H356Z"/><path d="M725 84l61-32 60 32v12H725Z"/><path d="M510 91l42-25 42 25v9h-84Z"/></g>
+<g fill="#238d37"><path d="M260 175l25-55 25 55Z"/><path d="M300 180l29-66 29 66Z"/><path d="M880 178l27-61 27 61Z"/><path d="M925 185l30-69 30 69Z"/></g>
+<path d="M245 245 Q430 315 610 300 Q805 289 965 245" fill="none" stroke="#174d9c" stroke-width="58" stroke-linecap="round"/>
+<path d="M245 245 Q430 315 610 300 Q805 289 965 245" fill="none" stroke="#fff" stroke-width="5" stroke-dasharray="22 20"/>
+<text x="600" y="235" text-anchor="middle" font-family="system-ui,Arial" font-size="124" font-weight="950" letter-spacing="-7" fill="#fff" stroke="#073b91" stroke-width="17" paint-order="stroke">ROUTA</text>
+<path d="M910 140c-22 0-40 18-40 40 0 31 40 70 40 70s40-39 40-70c0-22-18-40-40-40Z" fill="#ff5138" stroke="#fff" stroke-width="7"/><circle cx="910" cy="180" r="13" fill="#fff"/>
+</svg>
+<div class="hero-copy">
 <h1>Adanı kur.<br>Lojistiğini yönet.</h1>
-<p class="intro">Fabrikalar inşa et, üretim zincirlerini oluştur ve araç filonla adanı büyüt. Routa'nın kapalı beta sürümünü dene.</p>
+<p class="intro">Fabrikalar inşa et, üretim zincirlerini oluştur ve araç filonla adanı büyüt. Routa'nın Android kapalı beta sürümünü dene.</p>
 <a class="button" href="https://play.google.com/apps/testing/com.benderedge.routa" target="_blank" rel="noopener">Beta testine katıl</a>
+</div>
 </section>
 <section>
 <h2>Nasıl katılabilirsin?</h2>
 <div class="steps">
-<div class="step"><div class="number">01</div><div><h3>Google grubuna katıl</h3><p>Beta test grubuna, oyunu indireceğin Google hesabınla katıl.</p><a href="https://groups.google.com/g/routa-beta" target="_blank" rel="noopener">Gruba katıl →</a></div></div>
-<div class="step"><div class="number">02</div><div><h3>Test kaydını tamamla</h3><p>Aynı Google hesabıyla beta testine kaydol.</p><a href="https://play.google.com/apps/testing/com.benderedge.routa" target="_blank" rel="noopener">Beta kaydını aç →</a></div></div>
-<div class="step"><div class="number">03</div><div><h3>Oyunu indir</h3><p>Kayıt tamamlandıktan sonra Routa'yı Google Play'den yükle.</p><a href="https://play.google.com/store/apps/details?id=com.benderedge.routa" target="_blank" rel="noopener">Google Play'de aç →</a></div></div>
+<div class="step"><div class="number">01</div><h3>Google grubuna katıl</h3><p>Beta test grubuna, oyunu indireceğin Google hesabınla katıl.</p><a href="https://groups.google.com/g/routa-beta" target="_blank" rel="noopener">Gruba katıl →</a></div>
+<div class="step"><div class="number">02</div><h3>Test kaydını tamamla</h3><p>Aynı Google hesabıyla beta testine kaydol.</p><a href="https://play.google.com/apps/testing/com.benderedge.routa" target="_blank" rel="noopener">Beta kaydını aç →</a></div>
+<div class="step"><div class="number">03</div><h3>Oyunu indir</h3><p>Kayıt tamamlandıktan sonra Routa'yı Google Play'den yükle.</p><a href="https://play.google.com/store/apps/details?id=com.benderedge.routa" target="_blank" rel="noopener">Google Play'de aç →</a></div>
 </div>
 <p class="note">Üç adımda da aynı Google hesabını kullanmalısın.</p>
 </section>
-<footer>
-<p>Görüş ve hata bildirimleri: <a class="mail" href="mailto:benderedge.app@gmail.com">benderedge.app@gmail.com</a></p>
-<p>Routa · BenderEdge</p>
-</footer>
+<footer><p>Görüş ve hata bildirimleri: <a class="mail" href="mailto:benderedge.app@gmail.com">benderedge.app@gmail.com</a></p><p>Routa · BenderEdge</p></footer>
 </main>
 </body>
 </html>
